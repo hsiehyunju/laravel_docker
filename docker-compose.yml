@@ -15,5 +15,5 @@ services:
     volumes:
       - ./nginx/conf.d/:/etc/nginx/conf.d/
       - ./nginx/ssl/:/ssl/
-      - ./project:/var/www/html/laravel/public
+      - ./project/:/var/www/html/laravel/public/
     restart: always
