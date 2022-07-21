@@ -13,7 +13,7 @@ services:
       - "8080:80"
       - "443:443"
     volumes:
-      - ./nginx/conf.d:/etc/nginx/conf.d:rw
-      - ./nginx/ssl/:/ssl/:rw
-      - ./project:/var/www/html/laravel/public:rw
+      - ./nginx/conf.d:/etc/nginx/conf.d
+      - ./nginx/ssl/:/ssl/
+      - ./project:/var/www/html/laravel/public
     restart: always
