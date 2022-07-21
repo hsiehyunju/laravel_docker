@@ -1,0 +1,15 @@
+version: '3'
+
+networks:
+  server:
+
+services:
+  nginx:
+    container_name: nginxServer
+    image: nginx:stable
+    networks:
+      - server
+    ports:
+      -"8080:80"
+      -"443:443"
+    restart: always
