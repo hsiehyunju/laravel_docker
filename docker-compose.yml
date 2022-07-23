@@ -11,7 +11,7 @@ services:
     networks:
       - server
     ports:
-      - "8080:80"
+      - "80:80"
       - "443:443"
     volumes:
       - ./nginx/conf.d/:/etc/nginx/conf.d/
